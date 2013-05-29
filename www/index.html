@@ -37,7 +37,10 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            window.location = 'http://mobile.ketchumstaging.com/rep-protect-demo/'
+            document.addEventListener("deviceready", onDeviceReady, false)
+            function onDeviceReady(){
+              window.location = 'http://mobile.ketchumstaging.com/rep-protect-demo/'
+            }
         </script>
     </body>
 </html>
